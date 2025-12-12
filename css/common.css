@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oxanium:wght@200..800&display=swap");
+
+* {
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+*:focus,
+*:focus-visible {
+  outline: none;
+}
+
+:root {
+  --Inter-font: "Inter", sans-serif;
+  --Oxanium-font: "Oxanium", sans-serif;
+
+  --font-awesome: "Font Awesome 6 free";
+  --bootstrap-icon: "bootstrap-icons";
+
+  --transition-05s: all ease-in-out 0.5s;
+  --transition-08s: all ease-in-out 0.8s;
+
+  --main-color: 3, 46, 21;
+  /* rgba(3, 46, 21, 1) */
+  --second-color: 102, 102, 102;
+  /* rgba(102, 102, 102, 1) */
+  --third-color: 101, 59, 9;
+  /* rgba(101, 59, 9, 1) */
+  --Fourth-color: 22, 36, 86;
+  /* rgba(22, 36, 86, 1) */
+  --white-color: 255, 255, 255;
+  --black-color: 0, 0, 0;
+}
+
+input:hover,
+select:hover,
+.btn:hover,
+button:hover,
+.form-control:hover,
+textarea:hover,
+.navbar-toggler:hover,
+input:focus,
+select:focus,
+.btn:focus,
+button:focus,
+.form-control:focus,
+textarea:focus,
+.navbar-toggler:focus,
+.btn:first-child:active,
+.btn-close:focus,
+button.btn:focus:not(:focus-visible),
+.form-select:hover,
+.form-select:focus {
+  box-shadow: none;
+  outline: 0px;
+  border-color: inherit;
+}
+
+ol,
+ul,
+dl {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  display: inline-block;
+  outline: none;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+img,
+.img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+}
+
+body {
+  font-family: var(--Inter-font);
+}
+
+.head-pt {
+  padding-top: 170px;
+}
+
+.common-section {
+  padding: 146px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.common-section > *,
+.banner-inner-section > *,
+.footer-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-section .row,
+.common-section .row,
+.footer-section .row,
+.quote-box .row,
+.modalPopup .row {
+  gap: 24px 0px;
+}
+
+.common-title,
+.common-box > h2,
+.common-section .common-box > h2 {
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  position: relative;
+  color: rgba(var(--main-color), 1);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.common-para,
+.common-box > div.common-para {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  color: rgba(var(--main-color), 1);
+  font-weight: 300;
+  margin: 0px 0px;
+  line-height: 100%;
+  font-size: 16.18px;
+}
+
+.common-para p,
+.common-box > div p {
+  margin-bottom: 0px;
+}
+
+.common-para p:not(:last-child),
+.common-box > div p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.common-para ul,
+.common-box > div.common-para ul {
+  display: grid;
+  gap: 6px;
+}
+
+.common-para ul li,
+.common-box > div.common-para ul li {
+  position: relative;
+  font-size: 15px;
+  padding-left: 14px;
+}
+
+.common-para ul li::before,
+.common-box > div.common-para ul li::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  display: inline-block;
+  width: var(--ehw-cul);
+  height: var(--ehw-cul);
+  border-radius: 50%;
+  background: rgba(var(--black-color), 0.4);
+  --ehw-cul: 5px;
+  margin-top: 10px;
+}
+
+/* All type btn start */
+
+.common-btn,
+.common-btn:visited {
+  --common-btn-transition: var(--transition-08s);
+  transition: var(--common-btn-transition);
+  border: 0px solid var(--boco-btn);
+  background: var(--bg-btn);
+  color: var(--common-btn-color);
+  position: relative;
+  text-transform: capitalize;
+  border-radius: 50px;
+  font-size: 18.2px;
+  font-weight: 500;
+  line-height: 1.1;
+  padding: 15px 28px;
+  overflow: hidden;
+}
+
+.common-btn {
+  --boco-btn: rgba(var(--white-color), 0);
+  --bg-btn: linear-gradient(
+    180deg,
+    rgba(var(--main-color), 1) 0%,
+    #016630 100%
+  );
+  --common-btn-color: rgba(var(--white-color), 1);
+  transition: var(--common-btn-transition);
+}
+
+.common-btn:hover,
+.common-btn:first-child:active,
+.common-btn:active,
+.common-btn:focus,
+:not(.btn-check) + .common-btn:active,
+.common-btn:focus-visible,
+button.common-btn:focus:not(:focus-visible),
+.common-btn:first-child:hover {
+  --boco-btn: rgba(var(--third-color), 0);
+  --bg-btn: linear-gradient(
+    180deg,
+    #016630 0%,
+    rgba(var(--main-color), 1) 100%
+  );
+  --common-btn-color: rgba(var(--white-color), 1);
+  background: var(--bg-btn);
+  border-color: var(--boco-btn);
+  color: var(--common-btn-color);
+  transition: var(--common-btn-transition);
+}
+
+/* All type btn end */
+
+@media (max-width: 1366px) {
+  .common-section {
+    padding: 80px 0px;
+  }
+}
+@media (max-width: 1199px) {
+  .common-bgBtn {
+    padding: 14px 36px;
+    font-size: 18px;
+  }
+
+  .common-title,
+  .common-box > h2,
+  .common-section .common-box > h2 {
+    font-size: 30px;
+  }
+
+  .common-para,
+  .common-box > div.common-para {
+    font-size: 16px;
+  }
+
+  .common-section,
+  .common-section.WSWO-section.service-page,
+  .common-section.AOSHPS-section.about-page {
+    padding: 60px 0px;
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  .common-btn {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+
+  .head-pt {
+    padding-top: 160px;
+  }
+
+  .common-title,
+  .common-box > h2,
+  .common-section .common-box > h2 {
+    font-size: 24px;
+  }
+
+  .common-para,
+  .common-box > div.common-para {
+    font-size: 14px;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 16px;
+    min-height: 40px;
+  }
+
+  .form-box .common-bgBtn {
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .head-pt {
+    padding-top: 120px;
+  }
+
+  .common-title,
+  .common-box > h2,
+  .common-section .common-box > h2 {
+    font-size: 20px;
+  }
+
+  .common-para,
+  .common-box > div.common-para {
+    font-size: 13px;
+  }
+}
