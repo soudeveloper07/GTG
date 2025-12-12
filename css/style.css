@@ -1749,4 +1749,9 @@
     border-radius: 8px;
   }
 }
+.cannavbar-brand img{
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
+}
 /* media end */
