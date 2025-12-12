@@ -109,11 +109,9 @@
                     <button
                       class="navbar-toggler"
                       type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#navbarScroll"
-                      aria-controls="navbarScroll"
-                      aria-expanded="false"
-                      aria-label="Toggle navigation"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasRight"
+                      aria-controls="offcanvasRight"
                     >
                       <span class="navbar-toggler-icon bar-1"></span>
                       <span class="navbar-toggler-icon bar-2"></span>
@@ -1437,11 +1435,10 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-12">
               <div class="FAQ-images">
                 <picture>
-                    <source srcset="images/faq.png" type="image/webp">
-                    <source srcset="images/faq.png" type="image/png">
-                    <img src="images/faq.png" alt="Logo" class="img-fluid">
-                  </picture>
-                  
+                  <source srcset="images/faq.png" type="image/webp" />
+                  <source srcset="images/faq.png" type="image/png" />
+                  <img src="images/faq.png" alt="Logo" class="img-fluid" />
+                </picture>
               </div>
             </div>
           </div>
@@ -1738,6 +1735,73 @@
         </div>
       </div>
     </footer>
+
+    <!-- mobile menu start -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <a class="cannavbar-brand" href="index.html">
+          <picture>
+            <source srcset="images/logo.png" type="image/webp" />
+            <source srcset="images/logo.png" type="image/png" />
+            <img src="images/logo.png" alt="Logo" class="img-fluid" />
+          </picture>
+        </a>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto navbar-nav-scroll">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="javascript:void(0)"
+              id="PrivateTours"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Shop</a
+            >
+            <div class="dropdown-menu" aria-labelledby="PrivateTours">
+              <ul>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">Shop 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">Shop 2</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Fragrances</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- mobile menu end -->
 
     <script src="js/jquery.3.6.4.min.js"></script>
     <script src="js/bootstrap.5.2.3.min.js"></script>
