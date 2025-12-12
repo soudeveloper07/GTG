@@ -81,7 +81,7 @@
   margin: 4px 0px;
 }
 .navbar.DesktopNav .HeadContainer .navbar-nav .nav-item .nav-link {
-  color: rgba(var(--Fourth-color), 1);
+  color: rgba(var(--main-color), 1);
   transition: var(--transition-05s);
   position: relative;
   text-transform: capitalize;
